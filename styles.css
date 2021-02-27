@@ -1,0 +1,116 @@
+body {
+  text-align: center;
+  background-color: #d3e0ea;
+  overflow: hidden;
+}
+
+.Circle{
+  height: 200vh;
+  width: 100%;
+  background: #dce4e4;
+  filter: opacity(50%);
+  clip-path: circle(100px at 95% 15vh);
+  transition: 0.5s ease-in;
+  position: absolute;
+  top: -30vh;
+}
+
+.Circle-T {
+  clip-path: circle(1600px at 90% 100vh);
+  transition: 0.5s ease-in-out;
+}
+
+.Menu{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: -2%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.Bar1, .Bar2, .Bar3{
+    width: 30px;
+    height: 3px;
+    background: #312c51;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.Change1 {
+  transform: rotate(-45deg) translate(-15px, 3px);
+}
+.Change2 {
+  opacity: 0;
+}
+.Change3 {
+  transform: rotate(45deg) translate(-15px, -5px);
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 70vh;
+  left: 43%;
+  filter: opacity(90%);
+}
+
+a{
+  text-decoration: none;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #0a043c;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  height: 68vh;
+  margin: auto;
+  background: transparent;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 20px 20px #19456b;
+  background-color: grey;
+}
